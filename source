@@ -1,0 +1,41 @@
+--stat--
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("animeFiveiorWorld", " LightTheme")
+-- MAIN
+local Main = Window:NewTab("fun recorces")
+local MainSection = Main:NewSection("gadgets")
+
+--status--
+MainSection:NewButton("skit", "Makes you do gymnastics", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
+end)
+--mainsection--({for skids})
+MainSection:NewToggle("nonbeing", "go fast and jump high", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+    end
+end)
+
+MainSection:NewButton("Troll", "funny Af", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+--new Tab
+
+OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+end)
+
+OtherSection:NewButton("Bypassed Fly", "bird mode", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+    Fly(true)
+end)
